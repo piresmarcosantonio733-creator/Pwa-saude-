@@ -1,0 +1,86 @@
+{
+  "fonte": "Dados de teste extraídos dos PDFs enviados pelo usuário",
+  "modo": "teste",
+  "tabelas": [
+    {
+      "id": "agendamentos",
+      "titulo": "Agendamentos",
+      "colunas": ["ID", "Data", "Horário", "Paciente (teste)", "Idade (teste)", "Profissional", "Local de atendimento", "Endereço", "Status"],
+      "linhas": [
+        ["AG001", "25/08/2026", "08:00", "Maria da Silva", "62", "Dra. Mariana Costa", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro", "CONFIRMADO"],
+        ["AG002", "25/08/2026", "09:30", "João Pereira", "45", "Dr. Carlos Alberto Souza", "Hospital Municipal Dr. Lauro Macedo Sobrinho", "Rua Nossa Senhora do Rocio, 583 — Centro", "CONFIRMADO"],
+        ["AG003", "25/08/2026", "10:00", "Ana Carolina Santos", "28", "Dra. Mariana Costa", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro", "PENDENTE"],
+        ["AG004", "26/08/2026", "08:30", "José Ferreira", "58", "Dr. Henrique Lima", "UBS Ana Garcia Ramos (Ventania)", "Rua Dom Geraldo Fernandes, s/n — Conj. Hab. Maximino Pereira dos Santos", "CONFIRMADO"],
+        ["AG005", "26/08/2026", "14:00", "Francisca de Souza", "71", "Dra. Beatriz Mendes", "Posto de Saúde Vila Progresso", "Avenida Brasil — Vila Progresso", "PENDENTE"],
+        ["AG006", "27/08/2026", "09:00", "Pedro Henrique", "34", "Dr. Carlos Alberto Souza", "Hospital Municipal Dr. Lauro Macedo Sobrinho", "Rua Nossa Senhora do Rocio, 583 — Centro", "CONFIRMADO"],
+        ["AG007", "28/08/2026", "11:00", "Catarina Oliveira", "49", "Dra. Juliana Alves", "UBS do Conjunto Adalgiza B. Felício", "Rua Dom Geraldo Fernandes, s/n — Conj. Adalgiza B. Felício", "PENDENTE"]
+      ]
+    },
+    {
+      "id": "profissionais-plantoes",
+      "titulo": "Profissionais e plantões",
+      "colunas": ["ID", "Nome", "Função", "Local de atendimento", "Endereço completo", "Horário", "Contato", "Ativo"],
+      "linhas": [
+        ["PROF001", "Dr. Carlos Alberto Souza", "Médico Clínico Geral", "Hospital Municipal Dr. Lauro Macedo Sobrinho", "Rua Nossa Senhora do Rocio, 583 — Centro, Centenário do Sul - PR", "Seg a Sex: 07h às 19h", "(43) 3675-1388", "SIM"],
+        ["PROF002", "Dra. Mariana Costa", "Médica Clínica Geral", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro, Centenário do Sul - PR", "Seg a Sex: 07h às 16h", "(43) 3675-8042 Ramal 3", "SIM"],
+        ["PROF003", "Dr. Henrique Lima", "Médico Clínico Geral", "UBS Ana Garcia Ramos (Ventania)", "Rua Dom Geraldo Fernandes, s/n — Conj. Hab. Maximino Pereira dos Santos", "Seg a Sex: 08h às 17h", "(43) 3675-8042 Ramal 1", "SIM"],
+        ["PROF004", "Dra. Beatriz Mendes", "Enfermeira", "Posto de Saúde Vila Progresso", "Avenida Brasil — Vila Progresso, Centenário do Sul - PR", "Seg a Sex: 07h às 16h", "(43) 3675-1122", "SIM"],
+        ["PROF005", "Dra. Juliana Alves", "Enfermeira", "UBS do Conjunto Adalgiza B. Felício", "Rua Dom Geraldo Fernandes, s/n — Conj. Adalgiza B. Felício", "Seg a Sex: 07h às 16h", "(43) 3675-1518", "SIM"],
+        ["FARM001", "Farmácia Municipal", "Farmácia", "Farmácia Municipal de Centenário do Sul", "Rua Nossa Senhora do Rocio, 583 — Centro (dentro do Hospital)", "Seg a Sex: 07h às 22h", "(43) 3675-1388 / 3675-1487", "SIM"],
+        ["FARM002", "Farmácia São João", "Farmácia 24h", "Farmácia São João", "Av. Prefeito Wanderley A. de Moraes, 475 — Centro", "Todos os dias: 24h", "(43) 3675-1576", "SIM"]
+      ]
+    },
+    {
+      "id": "protocolos",
+      "titulo": "Protocolos",
+      "colunas": ["ID", "Nº protocolo", "Solicitante (teste)", "Assunto", "Data de abertura", "Status", "Setor responsável", "Endereço do setor"],
+      "linhas": [
+        ["PR001", "PROT-2026-158", "Maria da Silva", "Renovação de receita médica", "22/08/2026", "CONCLUÍDO", "Farmácia Municipal", "Rua Nossa Senhora do Rocio, 583 — Centro (dentro do Hospital)"],
+        ["PR002", "PROT-2026-159", "João Pereira", "Solicitação de transporte para tratamento", "23/08/2026", "EM ANDAMENTO", "Secretaria Municipal de Saúde", "Av. Prefeito Wanderley Antunes de Moraes, 616 — Centro"],
+        ["PR003", "PROT-2026-160", "Ana Carolina Santos", "Segunda via de cartão SUS", "23/08/2026", "AGUARDANDO", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro"],
+        ["PR004", "PROT-2026-161", "José Ferreira", "Solicitação de exame de rotina", "24/08/2026", "EM ANDAMENTO", "UBS Ana Garcia Ramos (Ventania)", "Rua Dom Geraldo Fernandes, s/n — Conj. Hab. Maximino Pereira dos Santos"],
+        ["PR005", "PROT-2026-162", "Francisca de Souza", "Reclamação sobre atendimento", "24/08/2026", "AGUARDANDO", "Ouvidoria / Secretaria Municipal de Saúde", "Av. Prefeito Wanderley Antunes de Moraes, 616 — Centro"]
+      ]
+    },
+    {
+      "id": "exames",
+      "titulo": "Exames",
+      "colunas": ["ID", "Protocolo", "Paciente (teste)", "Tipo de exame", "Data de coleta", "Data do resultado", "Local de coleta", "Endereço", "Status"],
+      "linhas": [
+        ["EX001", "CS-2026-0801", "Maria da Silva", "Hemograma Completo", "20/08/2026", "24/08/2026", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro", "DISPONÍVEL"],
+        ["EX002", "CS-2026-0802", "João Pereira", "Glicemia e Colesterol", "21/08/2026", "25/08/2026", "Hospital Municipal Dr. Lauro Macedo Sobrinho", "Rua Nossa Senhora do Rocio, 583 — Centro", "EM ANÁLISE"],
+        ["EX003", "CS-2026-0803", "Ana Carolina Santos", "Exame de Urina", "22/08/2026", "26/08/2026", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro", "EM ANÁLISE"],
+        ["EX004", "CS-2026-0804", "José Ferreira", "Hemograma + Glicemia", "23/08/2026", "27/08/2026", "UBS Ana Garcia Ramos (Ventania)", "Rua Dom Geraldo Fernandes, s/n — Conj. Hab. Maximino Pereira dos Santos", "AGUARDANDO COLETA"],
+        ["EX005", "CS-2026-0805", "Francisca de Souza", "Colesterol e Triglicerídeos", "24/08/2026", "28/08/2026", "Posto de Saúde Vila Progresso", "Avenida Brasil — Vila Progresso", "AGUARDANDO COLETA"]
+      ]
+    },
+    {
+      "id": "transporte",
+      "titulo": "Transporte",
+      "colunas": ["ID", "Data", "Horário", "Paciente (teste)", "Endereço de origem", "Destino", "Motorista", "Veículo", "Status"],
+      "linhas": [
+        ["TR001", "25/08/2026", "07:30", "Maria da Silva", "Rua das Flores, 123 — Centro", "Hospital Municipal — Rua Nossa Senhora do Rocio, 583", "Carlos", "Van — Placa ABC-1234", "CONFIRMADO"],
+        ["TR002", "25/08/2026", "08:45", "João Pereira", "Av. Brasil, 500 — Vila Progresso", "UBS Anita Canet — Av. Wanderley Antunes de Moraes, 850", "Ana", "Van — Placa DEF-5678", "CONFIRMADO"],
+        ["TR003", "26/08/2026", "07:00", "José Ferreira", "Rua Dom Geraldo Fernandes, 100 — Conj. Adalgiza", "UBS Ana Garcia Ramos — Rua Dom Geraldo Fernandes, s/n", "Carlos", "Van — Placa ABC-1234", "PENDENTE"],
+        ["TR004", "27/08/2026", "13:30", "Francisca de Souza", "Av. Brasil, 200 — Vila Progresso", "Posto Vila Progresso — Avenida Brasil", "Ana", "Van — Placa DEF-5678", "CONFIRMADO"]
+      ]
+    },
+    {
+      "id": "unidades-contatos",
+      "titulo": "Unidades e contatos",
+      "colunas": ["ID", "Tipo", "Nome", "Endereço", "CEP", "Telefone", "Horário", "Ativo"],
+      "linhas": [
+        ["UNI001", "Hospital", "Hospital Municipal Dr. Lauro Macedo Sobrinho", "Rua Nossa Senhora do Rocio, 583 — Centro", "86630-000", "(43) 3675-1388", "", "SIM"],
+        ["UNI002", "UBS", "UBS Anita Canet (Posto Central)", "Av. Prefeito Wanderley Antunes de Moraes, 850 — Centro", "86630-000", "(43) 3675-8042 — Ramal 3", "", "SIM"],
+        ["UNI003", "UBS", "UBS Ana Garcia Ramos (Ventania)", "Rua Dom Geraldo Fernandes, s/n — Conj. Hab. Maximino Pereira dos Santos", "86630-000", "(43) 3675-8042 — Ramal 1", "", "SIM"],
+        ["UNI004", "UBS", "Posto de Saúde Vila Progresso", "Avenida Brasil — Vila Progresso", "86630-000", "(43) 3675-1122", "", "SIM"],
+        ["UNI005", "UBS", "UBS do Conjunto Adalgiza B. Felício", "Rua Dom Geraldo Fernandes, s/n — Conj. Adalgiza B. Felício", "86630-000", "(43) 3675-1518", "", "SIM"],
+        ["UNI006", "Secretaria", "Secretaria Municipal de Saúde", "Av. Prefeito Wanderley Antunes de Moraes, 616 — Centro", "86630-000", "(43) 3675-1341", "", "SIM"],
+        ["UNI007", "Farmácia Municipal", "Farmácia Municipal de Centenário do Sul", "Rua Nossa Senhora do Rocio, 583 — Centro (dentro do Hospital)", "86630-000", "(43) 3675-1388 / 3675-1487", "", "SIM"],
+        ["UNI008", "Farmácia Comercial", "Farmácia São João", "Av. Prefeito Wanderley A. de Moraes, 475 — Centro", "86630-000", "(43) 3675-1576", "", "SIM"],
+        ["UNI009", "Farmácia Comercial", "Farmácia Central", "Av. Prefeito Wanderley A. de Moraes, 693 — Centro", "86630-000", "(43) 3675-1655", "", "SIM"],
+        ["UNI010", "Farmácia Comercial", "Farmácia Bom Jesus", "Av. Prefeito Wanderley A. de Moraes, 731 — Centro", "86630-000", "(43) 3675-1333", "", "SIM"]
+      ]
+    }
+  ]
+}
