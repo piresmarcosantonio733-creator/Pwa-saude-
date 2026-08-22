@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Saúde Centenário do Sul</title>
+<meta name="theme-color" content="#0D4A44" />
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="app-header">
+  <p class="eyebrow">Secretaria Municipal de Saúde</p>
+  <h1>Centenário do Sul</h1>
+  <p>Atendimento digital — consultas, transporte, farmácia de plantão e mais, direto pelo celular.</p>
+</header>
+
+<main>
+  <p class="section-title">Atendimento</p>
+  <div class="grid">
+    <button class="card" data-flow="agendar">
+      <span class="icon">📅</span>
+      <span class="label">Marcar / confirmar consulta</span>
+    </button>
+    <button class="card" data-flow="exame">
+      <span class="icon">🧪</span>
+      <span class="label">Ver resultado de exame</span>
+    </button>
+    <button class="card" data-flow="transporte">
+      <span class="icon">🚌</span>
+      <span class="label">Transporte para tratamento</span>
+    </button>
+    <button class="card" data-flow="enderecos">
+      <span class="icon">📍</span>
+      <span class="label">Endereços e telefones</span>
+    </button>
+    <button class="card" data-flow="plantao">
+      <span class="icon">🩺</span>
+      <span class="label">Médico e farmácia de plantão hoje</span>
+    </button>
+    <button class="card" data-flow="ouvidoria">
+      <span class="icon">📢</span>
+      <span class="label">Ouvidoria</span>
+    </button>
+    <button class="card" data-flow="protocolo">
+      <span class="icon">📋</span>
+      <span class="label">Acompanhar protocolo</span>
+    </button>
+    <button class="card" data-flow="avaliar">
+      <span class="icon">⭐</span>
+      <span class="label">Avaliar atendimento</span>
+    </button>
+  </div>
+
+  <p class="section-title">Emergência</p>
+  <div class="grid">
+    <button class="card emergency" style="grid-column: span 2" data-flow="emergencia">
+      <span class="icon">🚨</span>
+      <span class="label">Isto é uma emergência agora — ligue 192 (SAMU)</span>
+    </button>
+  </div>
+
+  <div class="protocol-banner">
+    🔒 Seus dados de saúde são protegidos pela LGPD e usados só para este atendimento.
+  </div>
+</main>
+
+<!-- Botão flutuante do assistente -->
+<button class="fab" id="fabAssistant" aria-label="Abrir assistente de atendimento">
+  <span class="fab-pulse"></span>
+  💬
+</button>
+
+<!-- Painel do assistente (chat + voz) -->
+<div class="assistant-sheet" id="assistantSheet">
+  <div class="assistant-panel">
+    <header>
+      <h2>Assistente da Saúde</h2>
+      <button class="close-btn" id="closeAssistant" aria-label="Fechar">✕</button>
+    </header>
+    <div class="chat-log" id="chatLog">
+      <div class="msg bot">Olá! Sou o assistente da Secretaria de Saúde. Posso te ajudar a marcar consulta, ver exame, achar farmácia de plantão e mais. Pode digitar ou falar por áudio. Como posso ajudar?</div>
+    </div>
+    <div class="chat-input-row">
+      <button class="icon-btn mic" id="micBtn" aria-label="Falar por áudio">🎤</button>
+      <input type="text" id="chatInput" placeholder="Digite sua mensagem..." />
+      <button class="icon-btn send" id="sendBtn" aria-label="Enviar">➤</button>
+    </div>
+    <p class="consent-note">Ao continuar, você concorda com o uso dos seus dados apenas para este atendimento (LGPD).</p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
